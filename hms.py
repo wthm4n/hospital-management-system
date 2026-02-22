@@ -721,7 +721,7 @@ class MainApplication:
                                     bg=CARD_BG, fg=MUTED, bd=1, relief="solid")
         recent_appt.grid(row=0, column=0, sticky="nsew", padx=(0, 8), pady=5)
         tbl = DataTable(recent_appt, ["Patient", "Doctor", "Date", "Time", "Status"])
-        tbl.pack(fill="both", expand=True, padx=10, pady=10)
+        tbl.pack(fill="both", expand=True, padx=10, pady=10) 
         tbl.color_tag("scheduled", "#e8f5e9", SECONDARY)
         tbl.color_tag("completed", "#e3f2fd", PRIMARY)
         tbl.color_tag("cancelled", "#ffebee", DANGER)
